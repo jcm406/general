@@ -3,8 +3,215 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-^+c:: Send {Shift Down}{F10}{Shift Up}+{p}
+`:: Send {Shift Down}{F10}{Shift Up}+{p}
+\:: Send {Shift Down}{F10}{Shift Up}+{p}
 
+Media_Stop::
+Run, "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
+return
+
+F9::
+Run, "C:\Program Files\Microsoft Office\root\Office16\ONENOTE.EXE"
+return
+
+F10::
+Run, "C:\Program Files (x86)\Microsoft\Edge\Application\msedge_proxy.exe"  --profile-directory=Default --app-id=pmfjlibffjpnkbfgmhhdnbgiigkecdcb
+return
+
+F11::
+Run, "C:\Program Files (x86)\Microsoft\Edge\Application\msedge_proxy.exe"  --profile-directory=Default --app-id=efjihabekekdpjopojipgokoafencefp
+return
+
+F12::
+Run, "C:\Program Files\Anki\anki.exe"
+Return
+
+Pause::
+Send, +2
+return
+
+#IfWinActive ahk_class Framework::CFrame
+^`::
+Send,^1^!1
+return
+
+#IfWinActive ahk_class Framework::CFrame
+NumPad1::
+Send,^1^!1
+return
+
+#IfWinActive ahk_class Framework::CFrame
+NumPad2::
+Send,^7^!1
+return
+
+#IfWinActive ahk_class Framework::CFrame
+NumpadDot::
+Send,^2
+return
+
+#IfWinActive ahk_class Framework::CFrame
+Numpad0::
+Send,^8^!2
+return
+
+#IfWinActive ahk_class Framework::CFrame
+NumPad3::
+Send,^3
+return
+
+#IfWinActive ahk_class Framework::CFrame
+^NumPad3::
+Send,^3^!2
+return
+
+#IfWinActive ahk_class Framework::CFrame
+Numpad6::
+Send,^3^!2
+return
+
+#IfWinActive ahk_class Framework::CFrame
+NumPad4::
+Send,^4
+return
+
+#IfWinActive ahk_class Framework::CFrame
+NumPad5::
+Send,^5
+return
+
+#IfWinActive ahk_class Framework::CFrame
+F5::
+Send,^3
+return
+
+#IfWinActive ahk_class Framework::CFrame
+F6::
+Send,^4
+return
+
+#IfWinActive ahk_class Framework::CFrame
+F7::
+Send,^5
+return
+
+#IfWinActive ahk_class Framework::CFrame
+F8::
+Send,^6
+return
+
+#IfWinActive ahk_class Framework::CFrame
+CapsLock::
+Send,{BackSpace}
+return
+
+#IfWinActive ahk_class Framework::CFrame
+NUmpad8::
+Send,^5^!2
+return
+
+#IfWinActive ahk_class Framework::CFrame
+NumpadMult::
+Send,^6
+return
+
+#IfWinActive ahk_class Framework::CFrame
+NumpadSub::
+Send,^+,
+Send,^+,
+Send,^+,
+Send,^+,
+Send,^+,
+return
+
+#IfWinActive ahk_class Framework::CFrame
+NumpadAdd::
+Send,^+.
+Send,^+.
+Send,^+.
+Send,^+.
+Send,^+.
+return
+
+#IfWinActive ahk_class Framework::CFrame
+NumpadDiv::
+Send,{tab}
+return
+
+#IfWinActive ahk_class Framework::CFrame
+Numpad7::
+Send,+{tab}
+return
+
+#IfWinActive ahk_class Framework::CFrame
+NumpadEnter::
+Send,^b
+return
+
+#IfWinActive ahk_class Framework::CFrame
+Numpad9::
+Send,^z
+return
+
+#IfWinActive ahk_class Framework::CFrame
+F1::
+Send,^c
+return
+
+#IfWinActive ahk_class Framework::CFrame
+Insert::
+Send,^c
+return
+
+#IfWinActive ahk_class Framework::CFrame
+F2::
+Send,{Enter}
+return
+
+#IfWinActive ahk_class Framework::CFrame
+F3::
+Send,{Space}={Space} 
+return
+
+#IfWinActive ahk_class Framework::CFrame
+End::
+Send,{Space}={Space} 
+return
+
+#IfWinActive ahk_class Framework::CFrame
+F4::
+Send,^v
+return
+
+#IfWinActive ahk_class Framework::CFrame
+Home::
+Send,^v
+return
+
+#1::
+Send,^+{Down}
+Send,^b
+return
+
+#2::
+Send,→
+return
+
+#3::
+Send,↑
+return
+
+#4::
+Send,↓
+return
+
+#n::
+Send,^+n
+Send,^i
+return
+
+
+#IfWinActive ahk_class Framework::CFrame
 pathid=
 (
 ^5^!2pathology
@@ -676,57 +883,6 @@ return
 ::assoc;::association(s) ^7
 return
 
-
-
-^`::
-Send,^1^!1
-return
-
-NumPad1::
-Send,^1^!1
-return
-
-NumPad2::
-Send,^2
-return
-
-NumPad3::
-Send,^3
-return
-
-NumPad4::
-Send,^4
-return
-
-NumPad5::
-Send,^5
-return
-
-NumPad6::
-Send,^6
-return
-
-#1::
-Send,^+{Down}
-Send,^b
-return
-
-#2::
-Send,→
-return
-
-#3::
-Send,↑
-return
-
-#4::
-Send,↓
-return
-
-#n::
-Send,^+n
-Send,^i
-return
 
 
 
