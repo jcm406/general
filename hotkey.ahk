@@ -10,16 +10,32 @@ Media_Stop::
 Run, "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
 return
 
+F4::
+Run, "C:\Program Files (x86)\Microsoft\Edge\Application\msedge_proxy.exe" --profile-directory=Default --app-id=aghbiahbpaijignceidepookljebhfak
+return
+
+F6::
+Run, "C:\Program Files (x86)\Microsoft\Edge\Application\msedge_proxy.exe"  --profile-directory=Default --app-id=kmhopmchchfpfdcdjodmpfaaphdclmlj
+return
+
+F7::
+Run, "C:\Program Files (x86)\Microsoft\Edge\Application\msedge_proxy.exe"  --profile-directory=Default --app-id=hicfgcagdjaboooncmbneloaflgicljd
+return
+
+F8::
+Run, "C:\Program Files (x86)\Microsoft\Edge\Application\msedge_proxy.exe"  --profile-directory=Default --app-id=kiacbpjgoljdmhiphoombphaageamjcn
+return
+
 F9::
-Run, "C:\Program Files\Microsoft Office\root\Office16\ONENOTE.EXE"
+Run, "C:\Program Files (x86)\Microsoft\Edge\Application\msedge_proxy.exe"  --profile-directory=Default --app-id=efjihabekekdpjopojipgokoafencefp
 return
 
 F10::
-Run, "C:\Program Files (x86)\Microsoft\Edge\Application\msedge_proxy.exe"  --profile-directory=Default --app-id=pmfjlibffjpnkbfgmhhdnbgiigkecdcb
+Run, "C:\Program Files (x86)\Microsoft\Edge\Application\msedge_proxy.exe" --profile-directory=Default --app-id=kjbdgfilnfhdoflbpgamdcdgpehopbep
 return
 
 F11::
-Run, "C:\Program Files (x86)\Microsoft\Edge\Application\msedge_proxy.exe"  --profile-directory=Default --app-id=efjihabekekdpjopojipgokoafencefp
+Run,"C:\Program Files\Microsoft Office\root\Office16\ONENOTE.EXE"
 return
 
 F12::
@@ -28,6 +44,31 @@ Return
 
 Pause::
 Send, +2
+return
+
+#IfWinActive ahk_class OpusApp
+NumpadAdd::
+Send,^+.
+Send,^+.
+Send,^+.
+Send,^+.
+Send,^+.
+return
+
+#IfWinActive ahk_class OpusApp
+NumpadMult::
+Send,!hsls
+return
+
+#IfWinActive ahk_class OpusApp
+NumpadDiv::
+Send,!hi
+Send, {Enter}
+return
+
+#IfWinActive ahk_class OpusApp
+NumpadEnter::
+Send,^b
 return
 
 #IfWinActive ahk_class Framework::CFrame
@@ -131,6 +172,7 @@ Send,^+.
 Send,^+.
 Send,^+.
 Send,^+.
+Send,^b
 return
 
 #IfWinActive ahk_class Framework::CFrame
