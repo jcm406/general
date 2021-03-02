@@ -3,345 +3,48 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-`:: Send {Shift Down}{F10}{Shift Up}+{p}
-\:: Send {Shift Down}{F10}{Shift Up}+{p}
-
-Media_Stop::
-Run, "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
-return
-
-F4::
-Run, "C:\Program Files (x86)\Microsoft\Edge\Application\msedge_proxy.exe" --profile-directory=Default --app-id=aghbiahbpaijignceidepookljebhfak
-return
-
-F6::
-Run, "C:\Program Files (x86)\Microsoft\Edge\Application\msedge_proxy.exe"  --profile-directory=Default --app-id=kmhopmchchfpfdcdjodmpfaaphdclmlj
-return
-
-F7::
-Run, "C:\Program Files (x86)\Microsoft\Edge\Application\msedge_proxy.exe"  --profile-directory=Default --app-id=hicfgcagdjaboooncmbneloaflgicljd
-return
-
-F8::
-Run, "C:\Program Files (x86)\Microsoft\Edge\Application\msedge_proxy.exe"  --profile-directory=Default --app-id=kiacbpjgoljdmhiphoombphaageamjcn
-return
-
-F9::
-Run, "C:\Program Files (x86)\Microsoft\Edge\Application\msedge_proxy.exe"  --profile-directory=Default --app-id=efjihabekekdpjopojipgokoafencefp
-return
-
-F10::
-Run, "C:\Program Files (x86)\Microsoft\Edge\Application\msedge_proxy.exe" --profile-directory=Default --app-id=kjbdgfilnfhdoflbpgamdcdgpehopbep
-return
-
-F11::
-Run,"C:\Program Files\Microsoft Office\root\Office16\ONENOTE.EXE"
-return
-
-F12::
-Run, "C:\Program Files\Anki\anki.exe"
-Return
-
-Pause::
-Send, +2
-return
-
-#IfWinActive ahk_class OpusApp
-NumpadAdd::
-Send,^+.
-Send,^+.
-Send,^+.
-Send,^+.
-Send,^+.
-return
-
-#IfWinActive ahk_class OpusApp
-NumpadMult::
-Send,!hsls
-return
-
-#IfWinActive ahk_class OpusApp
-NumpadDiv::
-Send,!hi
-Send, {Enter}
-return
-
-#IfWinActive ahk_class OpusApp
-NumpadEnter::
-Send,^b
-return
-
 #IfWinActive ahk_class Framework::CFrame
-^`::
-Send,^1^!1
-return
 
-#IfWinActive ahk_class Framework::CFrame
-NumPad1::
-Send,^1^!1
-return
-
-#IfWinActive ahk_class Framework::CFrame
-NumPad2::
-Send,^7^!1
-return
-
-#IfWinActive ahk_class Framework::CFrame
-NumpadDot::
-Send,^2
-return
-
-#IfWinActive ahk_class Framework::CFrame
-Numpad0::
-Send,^8^!2
-return
-
-#IfWinActive ahk_class Framework::CFrame
-NumPad3::
-Send,^3
-return
-
-#IfWinActive ahk_class Framework::CFrame
-^NumPad3::
-Send,^3^!2
-return
-
-#IfWinActive ahk_class Framework::CFrame
-Numpad6::
-Send,^3^!2
-return
-
-#IfWinActive ahk_class Framework::CFrame
-NumPad4::
-Send,^4
-return
-
-#IfWinActive ahk_class Framework::CFrame
-NumPad5::
-Send,^5
-return
-
-#IfWinActive ahk_class Framework::CFrame
-F5::
-Send,^3
-return
-
-#IfWinActive ahk_class Framework::CFrame
-F6::
-Send,^4
-return
-
-#IfWinActive ahk_class Framework::CFrame
-F7::
-Send,^5
-return
-
-#IfWinActive ahk_class Framework::CFrame
-F8::
-Send,^6
-return
-
-#IfWinActive ahk_class Framework::CFrame
-CapsLock::
-Send,{BackSpace}
-return
-
-#IfWinActive ahk_class Framework::CFrame
-NUmpad8::
-Send,^5^!2
-return
-
-#IfWinActive ahk_class Framework::CFrame
-NumpadMult::
-Send,^6
-return
-
-#IfWinActive ahk_class Framework::CFrame
-NumpadSub::
-Send,^+,
-Send,^+,
-Send,^+,
-Send,^+,
-Send,^+,
-return
-
-#IfWinActive ahk_class Framework::CFrame
-NumpadAdd::
-Send,^+.
-Send,^+.
-Send,^+.
-Send,^+.
-Send,^+.
-Send,^b
-return
-
-#IfWinActive ahk_class Framework::CFrame
-NumpadDiv::
-Send,{tab}
-return
-
-#IfWinActive ahk_class Framework::CFrame
-Numpad7::
-Send,+{tab}
-return
-
-#IfWinActive ahk_class Framework::CFrame
-NumpadEnter::
-Send,^b
-return
-
-#IfWinActive ahk_class Framework::CFrame
-Numpad9::
-Send,^z
-return
-
-#IfWinActive ahk_class Framework::CFrame
-F1::
-Send,^c
-return
-
-#IfWinActive ahk_class Framework::CFrame
-Insert::
-Send,^c
-return
-
-#IfWinActive ahk_class Framework::CFrame
-F2::
-Send,{Enter}
-return
-
-#IfWinActive ahk_class Framework::CFrame
-F3::
-Send,{Space}={Space} 
-return
-
-#IfWinActive ahk_class Framework::CFrame
-End::
-Send,{Space}={Space} 
-return
-
-#IfWinActive ahk_class Framework::CFrame
-F4::
-Send,^v
-return
-
-#IfWinActive ahk_class Framework::CFrame
-Home::
-Send,^v
-return
-
-#1::
-Send,^+{Down}
-Send,^b
-return
-
-#2::
-Send,→
-return
-
-#3::
-Send,↑
-return
-
-#4::
-Send,↓
-return
-
-#n::
-Send,^+n
-Send,^i
-return
-
-
-#IfWinActive ahk_class Framework::CFrame
-pathid=
-(
-^5^!2pathology
-^5"sketch"
-key points: ^7
-{tab}^3key
-^3key
-
-+{tab}SSx: ^7
-{tab}key{tab}^3key{tab}^3key
-
-+{tab}+{tab}+{tab}factor(s): ^7
-{tab}^3key
-
-+{tab}cause(s): ^7
-{tab}^3key
-
-+{tab}treatment(s):^7
-{tab}^3key
-
-)
-
-
-drugid=
-(
-^5^!2drug
-^5"sketch"
-key points: ^7
-{tab}^3key
-^3key
-
-+{tab}PK: ^7
-{tab}^3key
-
-+{tab}PD: ^7
-{tab}^3key
-
-+{tab}indications: ^7
-{tab}^3key
-
-+{tab}adverse reaction(s):^6
-{tab}^3key
-
-+{tab}contrainidication(s):^6
-{tab}^3key
-
-
-)
-
-
-
-micid=
-(
-^5^!2mcb
-^5"sketch"
-key points: ^7
-{tab}^3key
-^3key
-
-+{tab}transmission: ^7
-{tab}^3key
-
-+{tab}diagnosis: ^7
-{tab}^3key
-
-+{tab}pathogenesis: ^7
-{tab}^3key
-
-+{tab}Ssx: ^7
-{tab}^3key
-
-+{tab}treatment: ^7
-{tab}^3key
-
-)
-
-::pathid;::
-SendInput %pathid%
-return
-
-::micid;::
-SendInput %micid%
-return
-
-::drugid;::
-SendInput %drugid%
-return
-
+::crohns::Crohn's
+::chron::chronic
+::tx::treat
+::eut::eustachian tube
+::fev1::FEV1
+::fvc::FVC
+::o2::O^=2^=
+::usg::USG
+::utz::UTZ
+::gsw::GSW
+::iatro::iatrogenic
+::iq::IQ
+::relnship::relationship
+::relship::relationship
+::reln::relation
+::vasc::vascular
+::hpf::HPF
+::mva::MVA
+::mechism::mechanism
+::mechal::mechanical
+::anesth::anesthesia
+::rt::RT
+::imcd::immunocompromised
+::scca::SCCA
+::adenoca::adenocarcinoma
+::ich::ICH
+::vats::VATS
+::hcp::HCP
+::ggt::GGT
+::alp::ALP
+::ast::AST
+::alt::ALT
+::ptb::PTB
+::rdt::RDT
+::hpe::H&PE
+::hcw::HCW
+::plhiv::PLHIV
+::ssx::SSX
+::mycobact::mycobacteria
+::cxr::CXR
 ::sc2:: SARS-CoV-2
 ::nstemi::NSTEMI
 ::stemi::STEMI
@@ -493,7 +196,6 @@ return
 ::org::organization
 ::seq::sequence
 ::aa::AA
-::mm::MM
 ::phys::physical
 ::chem::chemical
 ::ph::pH
@@ -574,7 +276,6 @@ return
 ::lipoprot::lipoprotein
 ::lipoprots::lipoproteins
 ::glycoprot::glycoprotein
-::dis::disease
 ::tiss::tissue
 ::tox::toxin
 ::inflammn::inflammation
@@ -638,8 +339,8 @@ return
 ::ig::Ig
 ::fc::Fc
 ::copd::COPD
-::pk;::PK: ^7
-::pd;::PD: ^7
+::pk;::PK: 
+::pd;::PD: 
 ::comt::COMT
 ::sv::SV
 ::adcyl::adenylyl cyclase
@@ -710,7 +411,7 @@ return
 ::wont::won't
 ::mut::mutation
 ::egf::EGF
-::ca::CA
+::ca::Ca
 ::tsg::TSG
 ::rb::Rb
 ::transfmn::transformation
@@ -775,7 +476,7 @@ return
 ::cobalamine::vitamin B12
 ::vwf::vWF
 ::inflammy::inflammatory
-::most common::most common ^4
+::most common::most common 
 ::pnm::pneumonia
 ::interstit::interstitial
 ::nphil::neutrophil
@@ -845,84 +546,84 @@ return
 ::vn::vein
 ::assocd::associated 
 ::defcy::deficiency
-::seql;::sequelae ^7
+::seql;::sequelae 
 ::atsc::atherosclerosis
 ::ff::following
-::clincor::clinical correlation ^7
+::clincor::clinical correlation
 ::hct::HCT
-::df;::DF: ^7
+::df;::DF:
 return
 
 
-::gstd;::gold standard: ^3
-::gtx;::choice_treatment: ^3
-::hallmark;::hallmark: ^3
-::id;::id: ^3
+::gstd;::gold standard: 
+::gtx;::choice_treatment: 
+::hallmark;::hallmark:
+::id;::id:
 return
 
 
-::adv;::advantage(s): ^4
-::detox;::detox: ^4
+::adv;::advantage(s):
+::detox;::detox:
 return
 
 
-::dix::drug interaction(s): ^6
-::cid;::contrainidication(s): ^6
-::tox;::toxicity(ies): ^6
-::adr;::adverse reaction(s): ^6
-::caution;::caution(s): ^6
-::disadv;::disadvantage(s): ^6
-::xcept::except ^8
+::dix::drug interaction(s):
+::cid;::contrainidication(s):
+::tox;::toxicity(ies):
+::adr;::adverse reaction(s):
+::caution;::caution(s):
+::disadv;::disadvantage(s):
+::xcept::except
 return
 
 
-::distrib;::distribution ^7
-::reason;::reason(s): ^7
-::disx;::disease(s): ^7
-::pathgen;::pathogenesis: ^7
-::outcome;::outcome(s): ^7
-::gross;::gross: ^7
-::histo;::histology: ^7
-::solve;::solution: ^7
-::trans;::transmission: ^7
-::spx;::specimen(s): ^7
-::diss;::disease(s): ^7
-::Ssx;::Ssx: ^7
-::char;::character(s): ^7
-::layer;::layers: ^7
-::type;::type(s): ^7
-::test;::test: ^7
-::substrate;::substrate: ^7
-::step;::step(s): ^7
-::source;::source(s): ^7
-::result;::result(s) ^7
-::reqs;::requirement(s): ^7
-::prev;::prevent: ^7
-::precursor;::precursor(s): ^7
-::mech;::mechanism(s): ^7
-::list;::list: ^7
-::formula;::formula(s) ^7
-::fn;::function(s): ^7
-::feat;::feature(s) ^7
-::f;::factor(s): ^7
-::enzyme;::enzyme(s): ^7
-::dose;::dose(s): ^7
-::diffal;::differential: ^7
-::diag;::diagnosis: ^7
-::def;::define ^7
-::content;::content(s) ^7
-::clinsig;::clin_sig: ^7
-::moa;::MOA: ^7
-::check;::check: ^7
-::n;::normal: ^7
-::cause;::cause(s): ^7
-::dix;::drug interaction(s): ^7
-::indic;::indication(s): ^7
-::sfx;::side effect(s): ^7
-::rfs::risk factor(s): ^7
-::goal;::goal(s): ^7
+::distrib;::distribution
+::reason;::reason(s):
+::dse::disease
+::pathgen;::pathogenesis:
+::outcome;::outcome(s):
+::gross;::gross:
+::histo;::histology:
+::solve;::solution:
+::trans;::transmission:
+::spx;::specimen(s):
+::diss;::disease(s):
+::Ssx;::Ssx:
+::char;::character(s):
+::layer;::layers:
+::type;::type(s):
+::test;::test:
+::substrate;::substrate:
+::step;::step(s):
+::source;::source(s):
+::result;::result(s)
+::reqs;::requirement(s):
+::prev;::prevent:
+::precursor;::precursor(s):
+::mech;::mechanism(s):
+::list;::list:
+::formula;::formula(s)
+::fn;::function(s):
+::feat;::feature(s)
+::f;::factor(s):
+::enzyme;::enzyme(s):
+::dose;::dose(s):
+::diffal;::differential:
+::diag;::diagnosis:
+::def;::define
+::content;::content(s)
+::clinsig;::clin_sig:
+::moa;::MOA:
+::check;::check:
+::n;::normal:
+::cause;::cause(s):
+::dix;::drug interaction(s):
+::indic;::indication(s):
+::sfx;::side effect(s):
+::rfs::risk factor(s):
+::goal;::goal(s):
 ::txt::treatment
-::assoc;::association(s) ^7
+::assoc;::association(s)
 return
 
 
