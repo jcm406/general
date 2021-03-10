@@ -3,8 +3,69 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-#IfWinActive ahk_class Framework::CFrame
+#IfWinActive ahk_exe WINWORD.EXE
 
+::hcg::HcG
+::tsh::TSH
+::sirs::SIRS
+::abt::about
+::bilat::bilateral
+::dis::disease
+::ctni::cTnI
+::nyha::NYHA
+::pgml::pg/ml
+::ngml::ng/ml
+::ngdl::ng/dl
+::ctnt::cTnT
+::iu::IU
+::ckmb::CK-MB
+::acs::ACS
+::acei::ACEi
+::ocp::OCP
+::cgd::CGD
+::ivig::IVIg
+::mgdl::mg/dl
+::freqcy::frequency
+::freqy::frequency
+::freq::frequent
+::xla::XLA
+::cvid::CVID
+::hepa::HepA
+::fmhx::FmHx
+::turners::Turner's syndrome
+::ivf::IVF
+::mrkh::Mayer-Rokitansky-Küster-Hauser syndrome
+::n/v::nausea and vomiting
+::h&p::H&PE
+::hnp::H&PE
+::ahc::AHC
+::cpp::CPP
+::tft::TFT
+::lh::LH
+::fsh::FSH
+::gnrh::GnRH
+::dtrs::DTRs
+::wilms::Wilm's
+::abn::abnormal
+::ffup::follow-up
+::assx::asymptomatic
+::gr::Gr.
+::vcug::VCUG
+::upv::UPV
+::upj::UPJ
+::probs::problems
+::wn::within
+::rf;::risk factors:
+::abxs::antibiotics
+::ecm::ECM
+::ics::ICS
+::feno::F^=E^=NO
+::cstd::corticosteroid
+::ctsd::corticosteroid
+::surg::surgery
+::dsa::DSA
+::dxx::diagnose
+::chl::CHL
 ::crohns::Crohn's
 ::chron::chronic
 ::tx::treat
